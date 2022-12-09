@@ -17,7 +17,7 @@ int main(void)
 		{
 			putchar(i + '0');
 			putchar(j + '0');
-			if(count != 44)
+			if (count != 44)
 			{
 				putchar(',');
 				putchar(' ');
