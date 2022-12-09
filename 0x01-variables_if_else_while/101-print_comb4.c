@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- *
- * main- Entry point
+ * main - Entry point
  *
  * Return: Always 0 (success)
  */
@@ -14,7 +13,7 @@ int main(void)
 	while (i <= 7)
 	{
 		j = i + 1;
-		while(j <= 8)
+		while (j <= 8)
 		{
 			k = j + 1;
 			while (k <= 9)
