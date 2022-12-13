@@ -3,8 +3,8 @@
  * times_table - prints the 9 times table
  */
 void times_table(void)
-{	
-	int a =  0;
+{
+	int a = 0;
 	int b;
 
 	while (a <= 9)
@@ -13,6 +13,7 @@ void times_table(void)
 		while (b <= 9)
 		{
 			int c = a * b;
+
 			_putchar(c);
 			b++;
 		}
