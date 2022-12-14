@@ -7,7 +7,7 @@
 int main(void)
 {
 	int d = 0;
-	long int a =1;
+	long int a = 1;
 	long int b = a;
 	long int c = a + b;
 
@@ -19,7 +19,7 @@ int main(void)
 		}
 		a = b;
 		b = c;
-		c = a + b'
+		c = a + b;
 	}
 	printf("%d\n", d);
 	return (0);
