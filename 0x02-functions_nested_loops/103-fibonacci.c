@@ -24,4 +24,3 @@ int main(void)
 	printf("%d\n", d);
 	return (0);
 }
-		
