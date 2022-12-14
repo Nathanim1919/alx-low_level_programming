@@ -7,9 +7,9 @@
 int main(void)
 {
 	int count = 2;
-	int a = 1;
-	int b = a + 1;
-	int c = a + b;
+	long int a = 1;
+	long int b = a + 1;
+	long int c = a + b;
 
 	printf("%d, %d, ", a, b);
 	while (count < 50)
