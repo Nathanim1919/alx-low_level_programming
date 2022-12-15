@@ -1,1 +1,1 @@
-this is my first c programming repository in alx se program
+nested loops and functions in c programming
