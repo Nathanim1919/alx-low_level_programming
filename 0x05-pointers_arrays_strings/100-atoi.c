@@ -26,6 +26,6 @@ int _atoi(char *s)
 				break;
 			}
 		}
-		return (result *= sign % 2 == 0? -1: 1);
 	}
+	return (result *= sign % 2 == 0? -1: 1);
 }
