@@ -1,8 +1,11 @@
 #include "main.h"
-/*
- * swap_int - swap the values of two intefers
- * @a: pointer to integer a
- * @b: pinter to integer b
+
+/**
+ * swap_int - swaps the values of two intefers.
+ *
+ * @a: arg a
+ *
+ * @b: arg b
  */
 void swap_int(int *a, int *b)
 {
