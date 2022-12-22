@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  * *leet - encodes a string into 1337
- * @n: astring
+ * @s: astring
  * Return:Return a char
  */
-char *leet(char *)
+char *leet(char *s)
 {
 		int stringCount, leetCount;
 		char leetLetters[] = "aAeEoOtTlL";
