@@ -1,27 +1,32 @@
 #include "main.h"
 /**
  * *cap_string - capitalazies all words of a string.
- * @n: astring
+ * @s: astring
  * Return: return a capitalized string
  */
-char *cap_string(char *n)
+char *cap_string(char *s)
 {
-	int i = 0;
+	int count;
 
-	while (n[i] != '\0')
+	count = 0;
+	while (s[count] != '\0')
 	{
-		if (n[0] >= 97 && n[0] <= 122)
+		if (s[0] >= 97 && s[0] <= 122)
 		{
-			n[0] = n[0] - 32;
+			s[0] = s[0] - 32;
 		}
-		if (n[i] == (',' || ' ' || '\t' || '\n' || ';' || '.' || '!' || '?' || '"' || '(' || ')' || '{' || '}'))
+		if (s[count] == ' ' || s[count] == '\t' || s[count] == '\n'
+			|| s[count] == ',' || s[count] == ';' || s[count] == '.'
+			|| s[count] == '.' || s[count] == '!' || s[count] == '?'
+			|| s[count] == '"' || s[count] == '(' || s[count] == ')'
+			|| s[count] == '{' || s[count] == '}')
 		{
-			if (n[i + 1] >= 97 && n[i + 1] <= 122)
+			if (s[count + 1] >= 97 && s[count + 1] <= 122)
 			{
-				n[i + 1] = n[i + 1] - 32;
+				s[count + 1] = s[count + 1] - 32;
 			}
 		}
-		i++;
+		count++;
 	}
-	return (n);
+	return (s);
 }
