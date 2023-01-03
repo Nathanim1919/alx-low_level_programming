@@ -20,5 +20,6 @@ void print_diagsums(int *a, int size)
 		sum2 += a[(size - 1) * (counter2 + 1)];
 
 	}
-	printf("%d, %d\n", sum1, sum2);
+	_putchar(sum1);
+	_putchar(sum2);
 }
