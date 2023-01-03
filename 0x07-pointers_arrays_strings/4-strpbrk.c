@@ -9,9 +9,9 @@ char *_strpbrk(char *s, char *accept)
 {
 	unsigned int n;
 
-	for (; *s != '\n'; s++)
+	for (; *s != '\0'; s++)
 	{
-		for (n = 0; accept[n] != '\n'; n++)
+		for (n = 0; accept[n] != '\0'; n++)
 		{
 			if (*s == accept[n])
 				return (s);
