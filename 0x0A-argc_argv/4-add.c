@@ -1,18 +1,19 @@
-#include <stdio>
+#include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 #include <string.h>
 #include <ctype.h>
+#include "main.h"
 /**
- * main - entry point
- * @argc: the number of argumets passed to the program
- * @argv: array of string
- * Return: Always 0 (success)
+ * main - Program that takes in all integer arguments and returns the sum
+ * @argc: Number of command line arguments
+ * @argv: Array name
+ * Return: 1 if a non-integer is among the passed in arguments, 0 otherwise
  */
 int main(int argc, char *argv[])
 {
 	int i, j, length, sum;
 	char *ptr;
+
 	if (argc < 2)
 		printf("0\n");
 	else
