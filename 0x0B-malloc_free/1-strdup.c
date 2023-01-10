@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * *_strdup -returns a pointer to a newly allocated space in memory,
- * @*str: a string givens as aparameter
+ * @str: a string givens as aparameter
  * Return:apointer to a newly created space in memory
  */
 char *_strdup(char *str)
@@ -20,7 +20,7 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
-	str1 = malloc(sizeof(char) * i);
+	str1 = malloc(sizeof(char) * (i + 1));
 
 	j = 0;
 	while (i >= 0)
