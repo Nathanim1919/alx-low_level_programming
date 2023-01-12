@@ -22,9 +22,10 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 	i = 0;
-	while (i < max)
+	while (min <= max)
 	{
-		arr[i] = 0;
+		arr[i] = min;
+		min++;
 		i++;
 	}
 	return (arr);
