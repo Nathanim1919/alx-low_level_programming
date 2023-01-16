@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "dog.h"
+#include <stdio.h>
 /**
  * print_dog - prints a struct dog
  * @d: a dog structure
@@ -13,3 +14,4 @@ void print_dog(struct dog *d)
 		printf("Age: %d", d->age);
 		printf("Owner: %s", d->owner);
 	}
+}
