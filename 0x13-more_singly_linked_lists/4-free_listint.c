@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  * free_listint - frees a listint_t
- * @head = head of alist
+ * @head: head of alist
  * Return: nothing
  */
 void free_listint(listint_t *head)
