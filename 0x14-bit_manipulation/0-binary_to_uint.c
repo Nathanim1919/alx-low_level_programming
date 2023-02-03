@@ -33,8 +33,8 @@ unsigned int binary_to_uint(const char *b)
 			{
 				result = result * 2;
 			}
+			total += result;
 		}
-		total += result;
 	}
 	return (total);
 }
