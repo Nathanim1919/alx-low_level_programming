@@ -10,10 +10,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int file_read, file_open, count;
 	char *buf;
 
-	if (filename ==NULL)
+	if (filename == NULL)
 		return (0);
 
-	file_open = open(filename, 0_RDONLY);
+	file_open = open(filename, O_RDONLY);
 	if (file_open == -1)
 		return (0);
 
@@ -28,6 +28,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	close(file_open);
-	free(buf_letters);
+	free(buf);
 	return (count);
 }
