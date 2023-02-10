@@ -13,7 +13,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int total;
 	int result;
 	int count;
-	int j, i;
+	int j, i, index;
 
 	i = 0;
 	while (b[i] != '\0')
@@ -33,15 +33,17 @@ unsigned int binary_to_uint(const char *b)
 	for (count = i - 1; count <= 0; count--)
 	{
 		result = 1;
+		index = j;
 		if (b[count] == '1')
 		{
-			while (j > 0)
+			while (index > 0)
 			{
 				result *= 2;
-				j--;
+				index--;
 			}
 			total += result;
 		}
+		j++;
 	}
 	return (total);
 }
